@@ -1,0 +1,5 @@
+node_modules/
+*.tsbuildinfo
+lib/client.raw.js
+.DS_Store
+npm-debug.log*

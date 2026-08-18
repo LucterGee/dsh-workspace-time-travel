@@ -1,0 +1,8 @@
+# dsh-workspace-time-travel bundle patch: inserts the dual-face plugin row
+# into the web profile roster. The node half (exports ".") runs in the dsh
+# host process (workspace snapshot store + /tt/* HTTP routes); the dsh.client
+# declaration in package.json makes the browser half (exports "./client",
+# served at /plugins/dsh-workspace-time-travel/client.js) load in the web GUI.
+- insert:
+    - id: ui-workspace-time-travel
+      name: 'dsh-workspace-time-travel'
